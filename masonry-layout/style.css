@@ -1,0 +1,13 @@
+img{
+	width: 100%;/**ancho de imagen**/
+	margin-bottom: 12px; /**espacio debajo de la imagen*/
+
+}
+
+main{
+	column-count: 4; /**Cantidad de columnas**/
+	column-width: 200px;
+}
+
+
+
