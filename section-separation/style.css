@@ -1,0 +1,19 @@
+.triangulos {
+  position: relative;
+  background: #13CCC2;
+  height: 50vh;
+}
+
+.triangulos::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  left: -0%;
+  top: 100%;
+  z-index: 10;
+  display: block;
+  height: 135px;
+  background-size: 135px 100%;
+  background-image: linear-gradient(135deg, #13CCC2 25%, transparent 25%), linear-gradient(225deg, #13CCC2 25%, transparent 25%);
+  background-position: 0 0;
+}
