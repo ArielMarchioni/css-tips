@@ -1,0 +1,35 @@
+html{
+  max-width: 720px;
+  margin: 0 auto;
+}
+  #😺 {
+    display: grid;
+    font-size: 0;
+    overflow: hidden;
+    visibility: hidden;
+  }
+  #😺::before {
+    visibility: visible;
+    color: pink;
+    font: 1rem system-ui;
+    white-space: nowrap;
+    animation: marquee 20s linear infinite;
+    content: 'Meow white cat sleeps on a black shirt cat sit like bread lick human with sandpaper tongue. Sitting in a box scratch leg; meow for can opener to feed me but poop on floor and watch human clean up scratch my tummy actually i hate you now fight me drink water out of the faucet. Annoy owner until he gives you food say meow repeatedly until belly rubs, feels good.';
+  }
+  @keyframes marquee {
+    from { transform: translateX(720px); }
+    to { transform: translateX(-720px); }
+  }
+
+
+  #🧁 {
+    display: block;
+    font-size: 0;
+    visibility: hidden;
+
+  }
+  #🧁::before {
+    visibility: visible;
+    font: 1rem system-ui;
+    content: 'Pie cheesecake macaroon jelly carrot cake macaroon icing tiramisu. Jujubes danish chocolate liquorice jelly beans ice cream cake tart macaroon. Cupcake cookie croissant dragée jelly-o powder. Wafer pie chupa chups pudding cake. Jelly-o toffee liquorice marshmallow macaroon fruitcake croissant lollipop. Sesame snaps topping shortbread topping cake macaroon. Cake cheesecake shortbread liquorice halvah. Bonbon candy canes sesame snaps biscuit cheesecake apple pie macaroon. Brownie liquorice wafer tart lemon drops liquorice tiramisu. Carrot cake fruitcake pudding candy canes dragée cupcake sugar plum tootsie roll. Powder danish tiramisu liquorice pie. Liquorice cookie pudding macaroon jelly beans marzipan jelly brownie. Tiramisu tiramisu apple pie croissant pudding jelly cotton candy wafer.';
+  }
