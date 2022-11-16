@@ -1,0 +1,12 @@
+body {
+	--bg: #g1g1g1;
+	display: flex;
+	justify-content: center;
+	padding: 2rem;
+	min-height: 100vh;
+	background: var(--bg);
+}
+svg {
+	max-height: 40vh;
+	-webkit-box-reflect: below -2px linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.8));
+}
