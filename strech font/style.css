@@ -1,0 +1,90 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+}
+
+
+
+h1 {
+  --color-one: hsl(210 80% 50%);
+  --color-two: hsl(320 100% 75%);
+  --stretch-multiplier: 5;
+  font-size: clamp(2rem, 14vmin, 8rem);
+  font-family: 'Poppins', sans-serif;
+  text-transform: uppercase;
+  display: grid;
+  line-height: 1;
+}
+
+
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;  
+}
+
+
+
+[aria-hidden] {
+  display: flex;
+  gap: 0.02ch;
+  align-items: center;
+  color: black;
+}
+
+
+.stretch-o {
+  height: 1.12ch;
+  width: calc(var(--stretch) * 1.16ch);
+  translate: 0 -0.01ch;
+  border: 0.25ch solid black;
+  border-radius: 1ch;
+  transition: width 0.2s;
+  position: relative;
+}
+
+h1 {
+  --stretch: 1;
+}
+
+h1:hover {
+  --stretch: var(--stretch-multiplier);
+}
+
+
+.stretch-o:after,
+.stretch-o:before {
+  content: "";
+  border: 0.25ch solid var(--color);
+  position: absolute;
+  inset: -0.25ch;
+  border-radius: 1ch;
+  opacity: calc(-1 + var(--stretch));
+  transition: opacity 0.2s;
+}
+
+.stretch-o:before {
+  --color: var(--color-one);
+}
+
+.stretch-o:after {
+  --color: var(--color-two);
+  mask:
+    radial-gradient(
+      circle at top left,
+      black,
+      transparent
+    );
+}
