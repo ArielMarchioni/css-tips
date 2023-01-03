@@ -1,0 +1,43 @@
+.container {
+    position: relative;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    width: 100vw;
+    height: 100vh;
+    box-sizing: border-box;
+    background-color: rgb(254, 254, 254);
+    z-index: 0;
+}
+
+.btn-hover-left {
+    position: relative;
+    padding: 1rem;
+    border-left: 5px solid #52A7E7;
+    background-color: #EBEEF3;
+    color: #333;
+    text-align: center;
+    text-decoration: none;
+    transition: 0.4s;
+}
+
+.btn-hover-left::before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
+    background-color: #52A7E7;
+    transform-origin: top left;
+    transform: scale(0, 1);
+    transition: transform 0.4s;
+    color: #fff;
+    font-family: "Font Awesome 5 Brands";
+    font-weight: 900;
+    content: '\f099';
+}
+
+.btn-hover-left:hover::before {
+    transform: scale(1, 1);
+}
