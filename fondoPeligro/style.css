@@ -1,0 +1,70 @@
+:root {
+    /* ベースカラー */
+    --base-color: #0c0c0c;
+    /* メインカラー */
+    --main-color: #ffbb33;
+}
+
+/*.pic-container {
+    width: 600px;
+    height: 338px;
+}*/
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    background-color: var(--base-color);
+    font-family: GenEiNuGothicEB;
+    text-align: center;
+}
+
+
+
+.box-title p {
+    position: relative;
+    margin: 0 0 0.5rem;
+    color: var(--main-color);
+    font-size: 75px;
+}
+
+
+.box-sub-title p {
+    position: relative;
+    padding: 0.3rem 0.2rem;
+    background-color: var(--main-color);
+    color: var(--base-color);
+    font-size: 12px;
+}
+
+.box-sub-title p::before,
+.box-sub-title p::after {
+    padding: 0 0.5rem;
+    font-family: "Font Awesome 5 Free";
+    content: "\f071";
+    color: var(--base-color);
+    font-weight: 900;
+}
+
+
+
+.box::before,
+.box::after {
+    position: fixed;
+    height: 30px;
+    width: 100%;
+    content: '';
+    background: repeating-linear-gradient(45deg, var(--main-color) 0, var(--main-color) 20px, var(--base-color) 20px, var(--base-color) 40px);
+}
+
+.box::before {
+    top: 0;
+    left: 0;
+}
+
+.box::after {
+    bottom: 0;
+    left: 0;
+}
