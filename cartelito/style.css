@@ -1,0 +1,46 @@
+:root {
+    --pic-image-data: none;
+}
+
+.pic-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 600px;
+    height: 338px;
+    padding: 0px 6rem;
+    box-sizing: border-box;
+    background-color: rgb(254, 254, 254);
+}
+
+.box {
+    position: relative;
+    padding: 4rem 1rem 1rem 1.5rem;
+    background:
+        linear-gradient(-178deg, transparent 0 2rem, #333 2.1rem 2.3rem, #EF8F85 2.4rem 100%);
+}
+
+.box::before {
+    position: absolute;
+    top: 0.5rem;
+    left: -1rem;
+    padding: 1rem;
+    border-top-left-radius: 1rem;
+    background-color: black;
+    color: white;
+    content: "POINT";
+}
+
+.box:after {
+    position: absolute;
+    top: 3.5rem;
+    left: -1rem;
+    border: none;
+    border-bottom: solid 10px transparent;
+    border-right: solid 1rem #aaa;
+    content: '';
+}
+
+.box p {
+    line-height: 1.5;
+}
