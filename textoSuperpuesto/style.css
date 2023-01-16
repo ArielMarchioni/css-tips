@@ -1,0 +1,33 @@
+.container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 600px;
+    height: 338px;
+    padding: 0px 3rem;
+    box-sizing: border-box;
+    background-color: rgb(254, 254, 254);
+    z-index: 0;
+}
+
+
+h2 {
+    position: relative;
+    margin-bottom: 0.2rem;
+    font-weight: bold;
+    font-size: 26px;
+    text-align: center;
+}
+
+h2::before {
+    position: absolute;
+    top: -35px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: rgb(244, 226, 188);
+    font-size: 90px;
+    text-transform: uppercase;
+    content: 'heading';
+    z-index: -1;
+}
