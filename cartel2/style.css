@@ -1,0 +1,36 @@
+h2 {
+    position: relative;
+    margin-bottom: 0.2rem;
+    padding: 1.5rem 1rem 1rem;
+    background-image: linear-gradient(rgb(232, 211, 154, .5) 0 100%), linear-gradient(#efefef 0 100%);
+    background-repeat: no-repeat;
+    background-size: 60px 20px, 100% calc(100% - 0.5rem);
+    background-position: center top, bottom;
+    color: #353535;
+    font-weight: bold;
+    font-size: 26px;
+    text-align: center;
+    width: 300px;
+}
+
+h2::before,
+h2::after {
+    content: '';
+    position: absolute;
+    bottom: 10px;
+    z-index: -1;
+    height: 50%;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, .5);
+}
+
+h2::before {
+    left: 0px;
+    width: 20%;
+    transform: rotate(-4deg);
+}
+
+h2::after {
+    right: 0px;
+    width: 30%;
+    transform: rotate(4deg);
+}
