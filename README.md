@@ -22,6 +22,8 @@ Explora las categorías disponibles:
   Gradientes, patrones y estilos únicos.  
 - [**Diseño**](./Diseño)  
   Tips para layouts con Flexbox, Grid y más.
+- [**Máscaras y Recortes**](./mascaras-recortes)  
+  Uso de `mask`, `clip-path` y recortes avanzados en CSS.   
 
 ---
 
